@@ -78,3 +78,9 @@ document.addEventListener('mousemove', (e) => {
 document.addEventListener('mouseleave', () => {
     document.querySelector('.hero').style.transform = 'perspective(1000px) rotateX(0) rotateY(0)';
 });
+
+const music = document.getElementById("bg-music");
+
+window.addEventListener("click", () => {
+    music.play();
+}, { once: true });
